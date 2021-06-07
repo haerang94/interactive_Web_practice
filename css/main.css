@@ -1,57 +1,98 @@
 @charset 'utf-8';
 
-html{
-    font-family: 'Noto Sans KR', sans-serif;
+html {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-body{
-    overflow-x:hidden;
-    color:rgb(29,29,31);
-    /* 자간 */
-    letter-spacing: -0.05em;
-    background:#fff;
+body {
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  /* 자간 */
+  letter-spacing: -0.05em;
+  background: #fff;
 }
 
-p{
-    line-height: 1.6;
+p {
+  line-height: 1.6;
 }
 
-a{
-    color:rgb(29,29,31);
-    text-decoration: none;
+a {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
 }
 
-.global-nav{
-    height: 44px;
-    /* 더 작으면 같이 줄어들도록 */
-    
+.global-nav {
+  height: 44px;
+  /* 더 작으면 같이 줄어들도록 */
+  padding: 0 1rem;
 }
 
-.local-nav{
-    height:52px;
-    border-bottom:1px solid #ddd;
+.local-nav {
+  height: 52px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
-.global-nav-links,.local-nav-links{
-    max-width: 1000px;
-    margin:0 auto;
-    height:100%;
-    display:flex;
-    align-items: center;
+.global-nav-links,
+.local-nav-links {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.global-nav-links{
-    justify-content: space-between;
+.global-nav-links {
+  justify-content: space-between;
 }
 
-.product-name{
-    margin-right: auto;
-    font-size: 1.2rem;
-    font-weight: bold;
+.product-name {
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.local-nav-links a:not(.product-name){
-    font-size:0.8rem;
-    margin-left:2em;
+.local-nav-links a:not(.product-name) {
+  font-size: 0.8rem;
+  margin-left: 2em;
 }
 
+/* 스크롤 영역 */
+.scroll-section {
+  padding-top: 50vh;
+}
+
+#scroll-section-0 h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.main-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  /* 2.5rem */
+  font-size: 2.3rem;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 1px;
+}
+
+.main-message p {
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #888;
+  padding: 0 1rem;
+}
+
+.description strong {
+  font-size: 3rem;
+  color: rgba(29, 29, 31);
+  float: left;
+  margin-right: 0.2em;
+}
